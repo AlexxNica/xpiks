@@ -13,14 +13,11 @@
 #include "../../xpiks-qt/Common/defines.h"
 #include "../../xpiks-qt/Helpers/stringhelper.h"
 
-#ifdef Q_OS_WIN32
-#define _X86_
-#endif
-#include <exiv2/exiv2.hpp>
-
 #ifdef Q_OS_WIN
 #include <Windows.h>
 #endif
+
+#include <exiv2/exiv2.hpp>
 #include <exiv2/xmp.hpp>
 
 #define X_DEFAULT QString::fromLatin1("x-default")
